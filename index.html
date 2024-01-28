@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    
+    <title>party</title>
+</head>
+<body >
+
+    <div class="loading mt-0" >
+        <div class="spinner">
+            <div class="cube1"></div>
+            <div class="cube2"></div>
+          </div>
+    </div>
+   <!-- //////////////////////////////////// NavBr -->
+    <div class="side-nav-menu min-vh-100 position-fixed d-flex top-0" style="left: 0px;">
+        <div class="nav-tab  d-flex flex-column justify-content-between min-vh-100 p-4">
+            <div class="links">
+                <ul class="list-unstyled overflow-hidden">
+                    <li onclick="closeNav()"  class="py-2 position-relative cursor-pointer" id="search-link" style="top: 0px;">Search</li>
+                    <li onclick="closeNav()"  class="py-2 position-relative cursor-pointer" id="categories-link" style="top: 0px;">Categories</li>
+                    <li onclick="closeNav()"  class="py-2 position-relative cursor-pointer" id="area-link" style="top: 0px;">Area</li>
+                    <li onclick="closeNav()"   class="py-2 position-relative cursor-pointer" id="ingredients-link" style="top: 0px;">Ingredients</li>
+                    <li onclick="closeNav()"  class="py-2 position-relative cursor-pointer" id="contactus-link" style="top: 0px;">Contact Us</li>
+                </ul>
+            </div>
+            <div class="nav-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav-header d-flex flex-column justify-content-between py-4 text-center px-2 bg-white text-black">
+            <img class="logo" src="images/logo.png" alt="" srcset="">
+            <i class="fa-solid open-close-icon fa-2x fa-x"></i>
+            <div>
+                <i class="fa-solid fa-globe d-block"></i>
+                <i class="fa-solid fa-share-nodes"></i>
+            </div>
+        </div>
+    </div>
+<div class="page-container">
+        <!-- //////////////////////////////////// search -->
+  
+        <div class="page my-5 py-5" id="first">
+            
+
+            <div class="container ">
+                <div
+                class="row justify-content-center align-items-center g-2" id="first-meal"
+            >
+       
+            
+            </div>
+            </div>
+            
+        </div>
+
+        <div class="page active my-5" id="mm">
+            <div
+                class="container"
+            >
+  
+                <div  class="row justify-content-center align-items-center g-2 " id="m">
+                  
+                  
+                  
+                </div>
+                
+                
+            </div>
+            
+    
+        </div>
+        <div class="loading mt-0" >
+            <div class="spinner">
+                <div class="cube1"></div>
+                <div class="cube2"></div>
+              </div>
+        </div>
+    <div class="page " id="search">
+        <div
+            class="container"
+        >
+            <div class="row justify-content-center align-items-center g-2  mt-4 mb-5" >
+                <div class="col-md-4">
+                    <input
+                        type="text"
+                        class="form-control bg-transparent text-white"
+                        name="full-word"
+                        id="full-search"
+                        aria-describedby="Primary Search"
+                        placeholder="Search by Name"
+                    />
+                </div>
+                <div class="col-md-4">
+                    <input
+                    type="text"
+                    class="form-control bg-transparent"
+                    name="letter-search"
+                    id="letter-search"
+                    aria-describedby="Secondary Search"
+                    placeholder="Search by First Letter"
+                />
+            </div>
+                
+            </div>
+            <div  class="row justify-content-center align-items-center g-2 " id="meals">
+              
+              
+              
+            </div>
+            
+            
+        </div>
+        
+
+    </div>
+    <!-- //////////////////////////////////// categories -->
+    <div class="page my-5 c" id="categories">
+        <div class="container">
+            <div
+            class="row justify-content-center align-items-center g-2" id="catgory-meal"
+        >
+         
+        
+        </div>
+        </div>
+        
+    </div>
+
+    <div class="page my-5" id="categories-filter">
+        <div class="container">
+            <div
+            class="row justify-content-center align-items-center g-2" id="catgoryfilter-meal"
+        >
+     
+        
+        </div>
+        </div>
+        
+    </div>
+
+
+    <!-- //////////////////////////////////// area -->
+    <div class="page" id="area">
+        <div class="container">
+            <div
+            class="row justify-content-center align-items-center  g-2 my-5" id="area-meal"
+        >
+         
+        
+        </div>
+        </div>
+    </div>
+
+
+    <div class="page my-5" id="area-filter">
+        <div class="container">
+            <div
+            class="row justify-content-center align-items-center g-2" id="areafilter-meal"
+        >
+     
+        
+        </div>
+        </div>
+        
+    </div>
+    <!-- ////////////////////////////////////  ingredients-->
+    <div class="page" id="ingredients">
+        <div class="container">
+            <div
+            class="row justify-content-center align-items-center g-2 my-5" id="ingredients-meal"
+        >
+         
+        
+        </div>
+        </div>
+    </div>
+
+    <div class="page my-5" id="ingredients-filter">
+        <div class="container">
+            <div
+            class="row justify-content-center align-items-center g-2" id="ingredientsfilter-meal"
+        >
+     
+        
+        </div>
+        </div>
+        
+    </div>
+
+    <!-- //////////////////////////////////// contact-us -->
+    
+    <div class="page" id="contactus">
+        <div class="row py-5 g-4 " id="rowData">
+            
+        </div>
+        <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+
+    </div>
+
+</div>
+<script src="https://cdn.jsdelivr.net/npm/lodash@4.17.21/lodash.min.js" ></script>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="js/jquery-3.7.1.min.js"></script>
+<script src="js/main.js"></script>
+<script src="js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
