@@ -338,7 +338,7 @@ function displayMealsFirst(res){
     tags:
   </h2>
   <a target="_blank" href="" class="btn btn-success">Source</a>
-  <a target="${res.strYoutube}" href="" class="btn btn-danger">Youtube</a>
+  <a  href="${res.strYoutube}" class="btn btn-danger">Youtube</a>
  </div>
               
     `
